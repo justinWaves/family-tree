@@ -30,7 +30,7 @@ const IndexPage: NextPage = () => {
         onCancel={handleCancel}
         treeState={treeState}
       />
-      <Layout title="Home | Next.js + TypeScript Example">
+      <Layout title="Family Tree">
         <div className="w-screen h-screen bg-blue-100">
           <div className="flex flex-col items-center p-10 ">
             <h1 className="text-5xl font-bold "> 🌴👨‍👩‍👦 Family Tree 👨‍👩‍👧‍👧🌴</h1>
