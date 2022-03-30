@@ -25,13 +25,15 @@ function Tree({ state }) {
   console.log(state);
 
   return (
-    <div className=" h-64  mt-20 bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-auto items-center rounded-lg  cursor-pointer flex flex-col justify-between ">
-      <ul className="flex flex-row">{rootHumans}</ul>
+    <>
+      <div className=" h-64  mt-10 bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-auto items-center rounded-lg  cursor-pointer flex flex-col justify-between ">
+        <ul className="flex flex-row">{rootHumans}</ul>
 
-      <p className="text-2xl animate-pulse pb-10 px-10 pt-5 ">
-        click to add children
-      </p>
-    </div>
+        <p className="text-2xl animate-pulse pb-10 px-10 pt-5 ">
+          click to add children
+        </p>
+      </div>
+    </>
   );
 }
 

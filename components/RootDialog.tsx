@@ -64,7 +64,7 @@ export default function RootDialog({ onSubmit, onCancel, isOpen, treeState }) {
         />
       </DialogContent>
       <DialogActions>
-        <Button onClick={onCancel} className="text-violet-700 ">
+        <Button onClick={onCancel} className="text-violet-700">
           Not now
         </Button>
         <Button className="bg-violet-700 text-white" onClick={handleFormSubmit}>
