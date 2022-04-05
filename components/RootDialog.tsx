@@ -35,12 +35,13 @@ export default function RootDialog({ onSubmit, onCancel, isOpen, treeState }) {
       <DialogTitle>Enter Root Parents</DialogTitle>
       <DialogContent>
         <DialogContentText>
-          Every Tree has a root. Go as far back as you want to create your
+          Every Tree has its root. Go as far back as you want to create your
           family tree, grandparents, great grandparents, super great
           grandparents etc.
         </DialogContentText>
 
         <TextField
+          className="mt-5"
           autoFocus
           margin="dense"
           id="name"
@@ -52,6 +53,7 @@ export default function RootDialog({ onSubmit, onCancel, isOpen, treeState }) {
           onChange={handleText1Change}
         />
         <TextField
+          className="mt-5"
           autoFocus
           margin="dense"
           id="name2"
@@ -67,7 +69,11 @@ export default function RootDialog({ onSubmit, onCancel, isOpen, treeState }) {
         <Button onClick={onCancel} className="text-violet-700">
           Not now
         </Button>
-        <Button className="bg-violet-700 text-white" onClick={handleFormSubmit}>
+        <Button
+          type="submit"
+          className="bg-violet-700 text-white"
+          onClick={handleFormSubmit}
+        >
           Submit
         </Button>
       </DialogActions>
