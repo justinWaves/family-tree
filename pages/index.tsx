@@ -4,13 +4,13 @@ import { NextPage } from "next";
 import Tree from "../components/Tree";
 import RootDialog from "../components/RootDialog";
 import { Button } from "@mui/material";
-import ChildDialog from "../components/childDialog";
+import ChildDialog from "../components/ChildDialog";
 
 const IndexPage: NextPage = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(true);
   const [isChildDialogOpen, setIsChildDialogOpen] = useState(false);
   const [treeState, setTreeState] = useState([{ name: "" }, { name: "" }]);
-  const [childTreeState, setChildTreeState] = useState(null);
+  const [childTreeState, setChildTreeState] = useState([{}]);
 
   const handleSubmit = (newFormData) => {
     setTreeState(newFormData);
